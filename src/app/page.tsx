@@ -181,7 +181,7 @@ export default function Home() {
                   <h4 className="text-lg sm:text-xl font-semibold text-[#333333]">Ceremonia Civil</h4>
                 </div>
                 <p className="text-[#5a5a5a] text-base leading-relaxed">
-                  ¡El momento del "Sí, quiero"! Empezaremos puntuales.
+                  ¡El momento del "Sí, quiero"! Empezaremos puntuales y tendrá una duración de 45 minutos.
                 </p>
               </div>
 
@@ -191,7 +191,7 @@ export default function Home() {
                   <Wine size={20} className="text-[#c19a6b]" />
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3 mb-1">
-                  <span className="text-xl font-bold text-[#5a6c58]">14:00</span>
+                  <span className="text-xl font-bold text-[#5a6c58]">14:15</span>
                   <h4 className="text-lg sm:text-xl font-semibold text-[#333333]">Cóctel de Bienvenida</h4>
                 </div>
                 <p className="text-[#5a5a5a] text-base leading-relaxed">
