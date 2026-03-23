@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Heart, MapPin, Calendar, Clock, Info, Users, Wine, Utensils } from "lucide-react";
+import { Heart, MapPin, Calendar, Clock, Info, Users, Wine, Utensils, Music } from "lucide-react";
 import fotoNovios from "../../public/foto.jpeg";
 import fotoCeremonia from "../../public/ceremonia.jpeg";
 
@@ -205,11 +205,25 @@ export default function Home() {
                   <Utensils size={20} className="text-[#c19a6b]" />
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3 mb-1">
-                  <span className="text-xl font-bold text-[#5a6c58]">15:15</span>
+                  <span className="text-xl font-bold text-[#5a6c58]">15:00</span>
                   <h4 className="text-lg sm:text-xl font-semibold text-[#333333]">Paso al Salón y Almuerzo</h4>
                 </div>
                 <p className="text-[#5a5a5a] text-base leading-relaxed">
-                  Entrada formal al salón para dar comienzo al banquete y seguir celebrando.
+                  Entrada formal al salón para dar comienzo al banquete y seguir celebrando. La comida tendrá una duración aproximada de 3 horas.
+                </p>
+              </div>
+
+              {/* Evento 5: Discoteca */}
+              <div className="relative pl-8 sm:pl-10">
+                <div className="absolute left-[-17px] top-1 bg-[#fdfbf7] p-1 rounded-full border-2 border-[#c19a6b]">
+                  <Music size={20} className="text-[#c19a6b]" />
+                </div>
+                <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3 mb-1">
+                  <span className="text-xl font-bold text-[#5a6c58]">18:00</span>
+                  <h4 className="text-lg sm:text-xl font-semibold text-[#333333]">¡Discoteca y Barra Libre!</h4>
+                </div>
+                <p className="text-[#5a5a5a] text-base leading-relaxed">
+                  ¡Que empiece la fiesta! Música, bailes, copas y mucha diversión para el resto del día.
                 </p>
               </div>
             </div>
