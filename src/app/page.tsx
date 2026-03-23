@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Heart, MapPin, Calendar, Clock, Info } from "lucide-react";
+import fotoNovios from "../../public/foto.jpeg";
 
 const LilyCorner = ({ className }: { className?: string }) => (
   <svg 
@@ -85,7 +86,7 @@ export default function Home() {
           <motion.div variants={fadeIn} className="relative w-56 h-56 sm:w-72 sm:h-72 mb-10 rounded-full overflow-hidden border-4 border-[#e8dfcf] shadow-[0_10px_30px_rgba(0,0,0,0.05)] flex items-center justify-center bg-[#f4f1ea]">
             {/* Imagen de los novios */}
             <Image
-              src="/foto.jpeg"
+              src={fotoNovios}
               alt="Carolina y Sergio"
               fill
               className="object-cover object-center"
