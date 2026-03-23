@@ -11,15 +11,39 @@ const LilyCorner = ({ className }: { className?: string }) => (
     xmlns="http://www.w3.org/2000/svg" 
     className={`absolute pointer-events-none opacity-80 ${className}`}
   >
-    {/* Elegant Lily / Floral Vector Representation */}
-    <path d="M20 180 C -10 100, 50 30, 100 20 C 130 10, 180 30, 150 80 C 130 120, 80 140, 20 180 Z" fill="#F4F8F3" stroke="#8BA888" strokeWidth="0.5"/>
-    <path d="M20 180 C 60 160, 90 100, 80 50 C 70 20, 120 40, 100 90 C 90 130, 60 160, 20 180 Z" fill="#FFFFFF" stroke="#8BA888" strokeWidth="0.5"/>
-    <path d="M20 180 Q 70 120 100 50" stroke="#8BA888" strokeWidth="1.5" fill="none" />
-    <circle cx="95" cy="45" r="4" fill="#D4B872" />
-    <circle cx="108" cy="55" r="3" fill="#D4B872" />
-    {/* Leaves */}
-    <path d="M20 180 Q 80 190 120 160 Q 90 150 20 180" fill="#E8F0E4" stroke="#8BA888" strokeWidth="1" />
-    <path d="M20 180 Q 10 130 40 100 Q 50 140 20 180" fill="#E8F0E4" stroke="#8BA888" strokeWidth="1" />
+    {/* Nuevo Lirio más realista/elegante */}
+    {/* Tallo */}
+    <path d="M100 200 C 110 150, 115 100, 100 80" stroke="#8BA888" strokeWidth="2" fill="none" />
+    
+    {/* Hojas grandes inferiores */}
+    <path d="M100 170 Q 50 140, 20 180 Q 70 190, 100 170 Z" fill="#E8F0E4" stroke="#8BA888" strokeWidth="0.5" />
+    <path d="M100 150 Q 150 110, 180 140 Q 140 160, 100 150 Z" fill="#E8F0E4" stroke="#8BA888" strokeWidth="0.5" />
+    
+    {/* Pétalos principales del Lirio */}
+    {/* Pétalo trasero superior */}
+    <path d="M100 80 C 80 40, 120 10, 100 0 C 80 10, 120 40, 100 80 Z" fill="#Fdfbf7" stroke="#e8dfcf" strokeWidth="1" />
+    {/* Pétalos laterales traseros */}
+    <path d="M100 80 C 50 50, 20 60, 10 90 C 40 80, 80 70, 100 80 Z" fill="#Fdfbf7" stroke="#e8dfcf" strokeWidth="1" />
+    <path d="M100 80 C 150 50, 180 60, 190 90 C 160 80, 120 70, 100 80 Z" fill="#Fdfbf7" stroke="#e8dfcf" strokeWidth="1" />
+    
+    {/* Pétalos frontales grandes */}
+    <path d="M100 80 C 60 100, 30 140, 50 160 C 70 130, 90 100, 100 80 Z" fill="#FFFFFF" stroke="#e8dfcf" strokeWidth="1" />
+    <path d="M100 80 C 140 100, 170 140, 150 160 C 130 130, 110 100, 100 80 Z" fill="#FFFFFF" stroke="#e8dfcf" strokeWidth="1" />
+    <path d="M100 80 C 80 130, 120 130, 100 170 C 80 130, 120 130, 100 80 Z" fill="#FFFFFF" stroke="#e8dfcf" strokeWidth="1" />
+
+    {/* Estambres y pistilo (Toque dorado) */}
+    <path d="M100 80 Q 90 60, 85 45" stroke="#D4B872" strokeWidth="1.5" fill="none" />
+    <circle cx="85" cy="45" r="2.5" fill="#c19a6b" />
+    
+    <path d="M100 80 Q 110 60, 115 45" stroke="#D4B872" strokeWidth="1.5" fill="none" />
+    <circle cx="115" cy="45" r="2.5" fill="#c19a6b" />
+    
+    <path d="M100 80 Q 100 50, 100 35" stroke="#c19a6b" strokeWidth="2" fill="none" />
+    <circle cx="100" cy="35" r="3.5" fill="#c19a6b" />
+    
+    {/* Detalles de nervaduras en pétalos frontales */}
+    <path d="M100 80 Q 80 110, 60 140" stroke="#F4F8F3" strokeWidth="1" fill="none" />
+    <path d="M100 80 Q 120 110, 140 140" stroke="#F4F8F3" strokeWidth="1" fill="none" />
   </svg>
 );
 
