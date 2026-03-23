@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-great-vibes: var(--font-great-vibes);
+  --font-cormorant: var(--font-cormorant);
+}
+
+body {
+  font-family: var(--font-cormorant), serif;
+}
