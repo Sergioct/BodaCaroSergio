@@ -205,7 +205,7 @@ export default function Home() {
                   <Utensils size={20} className="text-[#c19a6b]" />
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3 mb-1">
-                  <span className="text-xl font-bold text-[#5a6c58]">15:00</span>
+                  <span className="text-xl font-bold text-[#5a6c58]">15:15</span>
                   <h4 className="text-lg sm:text-xl font-semibold text-[#333333]">Paso al Salón y Almuerzo</h4>
                 </div>
                 <p className="text-[#5a5a5a] text-base leading-relaxed">
@@ -219,7 +219,7 @@ export default function Home() {
                   <Music size={20} className="text-[#c19a6b]" />
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3 mb-1">
-                  <span className="text-xl font-bold text-[#5a6c58]">18:00</span>
+                  <span className="text-xl font-bold text-[#5a6c58]">18:15</span>
                   <h4 className="text-lg sm:text-xl font-semibold text-[#333333]">¡Discoteca y Barra Libre!</h4>
                 </div>
                 <p className="text-[#5a5a5a] text-base leading-relaxed">
