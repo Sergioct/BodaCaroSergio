@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Heart, MapPin, Calendar, Clock, Info } from "lucide-react";
 import fotoNovios from "../../public/foto.jpeg";
+import fotoCeremonia from "../../public/ceremonia.jpeg";
 
 const LilyCorner = ({ className }: { className?: string }) => (
   <svg 
@@ -124,16 +125,29 @@ export default function Home() {
           </motion.div>
           
           {/* Lugar */}
-          <motion.div variants={fadeIn} className="mb-14 flex flex-col items-center bg-[#f4f8f3]/80 max-w-lg w-full p-8 sm:p-10 rounded-3xl border border-[#dce5da] shadow-md backdrop-blur-sm">
-            <MapPin size={36} className="text-[#7a8c78] mb-4" />
-            <p className="text-[#5a6c58] mb-2 text-sm sm:text-base uppercase tracking-[0.2em] font-bold">Lugar de Celebración</p>
-            <h3 className="text-3xl sm:text-4xl tracking-[0.1em] text-[#c19a6b] uppercase font-bold mb-4 mt-1">
-              Gaztelubide
-            </h3>
-            <p className="text-[#4a4a4a] text-lg sm:text-xl text-center leading-relaxed">
-              Carretera Las Rozas - El Escorial km 5<br />
-              Las Rozas de Madrid, Madrid
-            </p>
+          <motion.div variants={fadeIn} className="mb-14 flex flex-col items-center bg-[#f4f8f3]/80 max-w-2xl w-full rounded-3xl border border-[#dce5da] shadow-md backdrop-blur-sm overflow-hidden">
+            {/* Imagen de la ceremonia ancha y a la mitad de altura con filtro blanco y negro */}
+            <div className="relative w-full h-48 sm:h-64 border-b border-[#dce5da]">
+              <Image
+                src={fotoCeremonia}
+                alt="Lugar de la Ceremonia - Gaztelubide"
+                fill
+                className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-700"
+                unoptimized
+              />
+            </div>
+            
+            <div className="p-8 sm:p-10 flex flex-col items-center">
+              <MapPin size={36} className="text-[#7a8c78] mb-4" />
+              <p className="text-[#5a6c58] mb-2 text-sm sm:text-base uppercase tracking-[0.2em] font-bold">Lugar de Celebración</p>
+              <h3 className="text-3xl sm:text-4xl tracking-[0.1em] text-[#c19a6b] uppercase font-bold mb-4 mt-1">
+                Gaztelubide
+              </h3>
+              <p className="text-[#4a4a4a] text-lg sm:text-xl text-center leading-relaxed">
+                Carretera Las Rozas - El Escorial km 5<br />
+                Las Rozas de Madrid, Madrid
+              </p>
+            </div>
           </motion.div>
           
           {/* RSVP Footer */}
