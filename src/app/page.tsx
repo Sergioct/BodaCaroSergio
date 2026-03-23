@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Heart, MapPin, Calendar, Clock, Info } from "lucide-react";
+import { Heart, MapPin, Calendar, Clock, Info, Users, Wine, Utensils } from "lucide-react";
 import fotoNovios from "../../public/foto.jpeg";
 import fotoCeremonia from "../../public/ceremonia.jpeg";
 
@@ -147,6 +147,71 @@ export default function Home() {
                 Carretera Las Rozas - El Escorial km 5<br />
                 Las Rozas de Madrid, Madrid
               </p>
+            </div>
+          </motion.div>
+
+          {/* Itinerario (Timeline) */}
+          <motion.div variants={fadeIn} className="mb-16 w-full max-w-lg">
+            <h3 className="text-2xl sm:text-3xl tracking-[0.15em] text-[#7a8c78] uppercase font-bold mb-10 text-center">
+              Itinerario
+            </h3>
+            
+            <div className="relative border-l-2 border-[#e8dfcf] ml-4 sm:ml-6 space-y-10 pb-4">
+              {/* Evento 1: Llegada */}
+              <div className="relative pl-8 sm:pl-10">
+                <div className="absolute left-[-17px] top-1 bg-[#fdfbf7] p-1 rounded-full border-2 border-[#c19a6b]">
+                  <Users size={20} className="text-[#c19a6b]" />
+                </div>
+                <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3 mb-1">
+                  <span className="text-xl font-bold text-[#5a6c58]">13:00</span>
+                  <h4 className="text-lg sm:text-xl font-semibold text-[#333333]">Llegada de invitados</h4>
+                </div>
+                <p className="text-[#5a5a5a] text-base leading-relaxed">
+                  Os esperamos un ratito antes para ir acomodándoos y prepararlo todo para la ceremonia.
+                </p>
+              </div>
+
+              {/* Evento 2: Ceremonia */}
+              <div className="relative pl-8 sm:pl-10">
+                <div className="absolute left-[-17px] top-1 bg-[#fdfbf7] p-1 rounded-full border-2 border-[#c19a6b]">
+                  <Heart size={20} className="text-[#c19a6b]" />
+                </div>
+                <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3 mb-1">
+                  <span className="text-xl font-bold text-[#5a6c58]">13:30</span>
+                  <h4 className="text-lg sm:text-xl font-semibold text-[#333333]">Ceremonia Civil</h4>
+                </div>
+                <p className="text-[#5a5a5a] text-base leading-relaxed">
+                  ¡El momento del "Sí, quiero"! Empezaremos puntuales.
+                </p>
+              </div>
+
+              {/* Evento 3: Cóctel */}
+              <div className="relative pl-8 sm:pl-10">
+                <div className="absolute left-[-17px] top-1 bg-[#fdfbf7] p-1 rounded-full border-2 border-[#c19a6b]">
+                  <Wine size={20} className="text-[#c19a6b]" />
+                </div>
+                <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3 mb-1">
+                  <span className="text-xl font-bold text-[#5a6c58]">14:00</span>
+                  <h4 className="text-lg sm:text-xl font-semibold text-[#333333]">Cóctel de Bienvenida</h4>
+                </div>
+                <p className="text-[#5a5a5a] text-base leading-relaxed">
+                  A continuación de la ceremonia, disfrutaremos de un aperitivo mientras nos hacemos unas fotos con vosotros.
+                </p>
+              </div>
+
+              {/* Evento 4: Almuerzo */}
+              <div className="relative pl-8 sm:pl-10">
+                <div className="absolute left-[-17px] top-1 bg-[#fdfbf7] p-1 rounded-full border-2 border-[#c19a6b]">
+                  <Utensils size={20} className="text-[#c19a6b]" />
+                </div>
+                <div className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-3 mb-1">
+                  <span className="text-xl font-bold text-[#5a6c58]">15:15</span>
+                  <h4 className="text-lg sm:text-xl font-semibold text-[#333333]">Paso al Salón y Almuerzo</h4>
+                </div>
+                <p className="text-[#5a5a5a] text-base leading-relaxed">
+                  Entrada formal al salón para dar comienzo al banquete y seguir celebrando.
+                </p>
+              </div>
             </div>
           </motion.div>
           
